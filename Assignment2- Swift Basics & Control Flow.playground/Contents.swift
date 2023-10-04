@@ -51,7 +51,7 @@ print(reversedText)
 
 // 6. დაბეჭდეთ ყველა ორნიშნა რიცხვი რომელიც ერთნაირი ციფრებით არის შედგენილი.
 for i in 10..<100 {
-    if i / 10 == i % 10 {
+    if i % 11 == 0 {
         print(i, terminator: ", ")
     }
 }
@@ -73,7 +73,7 @@ print(reversedNumber4)
 var isNumberFound = false
 var counter = 1
 
-while isNumberFound == false {
+while !isNumberFound {
     if (counter % 5 == 0) && (counter % 9 == 0) {
         isNumberFound = true
         print(counter)
@@ -85,7 +85,7 @@ while isNumberFound == false {
 var month = "August"
 
 switch month {
-case "December", "Jenuary", "February":
+case "December", "January", "February":
     print("It's winter now")
 case "March", "April", "May":
     print("It's spring now")
